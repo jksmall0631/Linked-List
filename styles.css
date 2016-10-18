@@ -1,0 +1,17 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+}
+
+.main-section {
+  background-color: #455A64;
+  position: absolute;
+  left: 0;
+
+}
+
+.bookmarks {
+  background-color: #CFD8DC;
+  position: absolute;
+  right: 0;
+}
