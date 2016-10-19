@@ -7,7 +7,7 @@ span h1 {
 }
 
 .company-name {
-  margin: 20px;
+  margin: 0 auto;
   font-size: 50px;
   font-weight: 800;
 }
@@ -46,7 +46,7 @@ header img {
   background-color: #CFD8DC;
   right: 0;
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #enter-button {
