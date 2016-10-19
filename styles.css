@@ -8,6 +8,11 @@ body {
 
 }
 
+header img {
+  height: 20px;
+  width: 20px;
+}
+
 .bookmarks {
   background-color: #CFD8DC;
   right: 0;
