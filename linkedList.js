@@ -3,7 +3,8 @@ var websiteUrlField = $('#website-url').value;
 
 $('#enter-button').on('click', function(){
   displayBookmarkInfo();
-  $('.bookmark-card').append('<div>bla</div>');
+  $('.bookmarks').append('<div>bla</div>');
+
 });
 
 function displayBookmarkInfo(){
