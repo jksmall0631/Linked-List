@@ -95,10 +95,6 @@ header img {
   color: red;
 }
 
-bookmark-card {
-  background-color: yellow;
-}
-
-bookmark-read-button {
-  color: red;
+.background-color {
+  background-color: #f2f4f4;
 }
