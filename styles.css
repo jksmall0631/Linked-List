@@ -61,6 +61,7 @@ header img {
   margin-bottom: 20px;
 }
 
+
 .bookmark-card {
   border: solid 2px #607d8b;
   width: 90%;
@@ -88,4 +89,16 @@ header img {
 
 .bookmark-title {
   font-size: 20px;
+}
+
+.red{
+  color: red;
+}
+
+bookmark-card {
+  background-color: yellow;
+}
+
+bookmark-read-button {
+  color: red;
 }
