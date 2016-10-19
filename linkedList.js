@@ -1,6 +1,3 @@
-var websiteTitleField = $('#website-title').value;
-var websiteUrlField = $('#website-url').value;
-
 $('#enter-button').on('click', function(){
   createCard();
   displayBookmarkInfo();
@@ -21,4 +18,13 @@ $('.bookmarks').append('<div class="bookmark-card">' +
                         '<input id="bookmark-delete-button" type="button" name="Delete" value="Delete">' +
                         '</div>'
 );
+}
+
+function readButton(){
+  
+  $('#bookmark-read-button').toggleClass('.read');
+}
+
+function deleteButton(){
+
 }
