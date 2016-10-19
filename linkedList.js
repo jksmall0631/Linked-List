@@ -1,19 +1,17 @@
 $('#enter-button').on('click', function(){
   createCard();
-  displayBookmarkInfo();
 });
 
-function displayBookmarkInfo(){
-  var websiteTitleValue = $('#website-title').val();
-  var websiteUrlField = $('#website-url').val();
-  $('.bookmark-title').text(websiteTitleValue);
-  $('.bookmark-url').text(websiteUrlField);
-}
+$('#bookmark-delete-button').on('click', function(){
+  deleteFunction();
+});
 
 function createCard(){
+  var websiteTitleValue = $('#website-title').val();
+  var websiteUrlField = $('#website-url').val();
 $('.bookmarks').append('<div class="bookmark-card">' +
-  '<h1 class="bookmark-title"></h1>' +
-  '<a href="#"><h2 class="bookmark-url"></h2></a>' +
+  '<h1 class="bookmark-title">' + websiteTitleValue + '</h1>' +
+  '<a href="#"><h2 class="bookmark-url">' + websiteUrlField + '</h2></a>' +
   '<input id="bookmark-read-button" type="button" name="Read" value="Read">' +
   '<input id="bookmark-delete-button" type="button" name="Delete" value="Delete">' +
   '</div>'
@@ -25,6 +23,7 @@ function readButton(){
   this.button.toggleClass('.read');
 }
 
-function deleteButton(){
-  this.button = $('#bookmark-delete-button');
+function deleteFunction(){
+  $('bookmark-card').remove();
+  // this.button = $('#bookmark-delete-button');
 }
