@@ -8,7 +8,7 @@ span h1 {
 
 .company-name {
   margin: 20px;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 800;
 }
 
@@ -16,13 +16,24 @@ span h1 {
   background-color: #455A64;
   left: 0;
   color: #ffffff;
+  width: 50%;
+  height: 100vh;
+}
+
+.main-section, .bookmarks {
+  display: inline-block;
+  position: absolute;
+}
+
+header {
+  margin: 30% 0;
 }
 
 header input {
   display: block;
-  margin: 20px;
-  width: 300px;
-  height: 25px;
+  margin: 5%;
+  width: 90%;
+  height: 30px;
   padding-left: 5px;
 }
 
@@ -34,12 +45,14 @@ header img {
 .bookmarks {
   background-color: #CFD8DC;
   right: 0;
+  width: 50%;
+  height: 100vh;
 }
 
 #enter-button {
   background-color: #ffc107;
   color: #ffffff;
-  width: 310px;
+  width: 92%;
   font-weight: 800;
   border: none;
   margin-bottom: 20px;
@@ -47,11 +60,11 @@ header img {
 
 .bookmark-card {
   border: solid 2px #607d8b;
+  width: 90%;
   background-color: #ffffff;
-  width: 30%;
   height: 100px;
   padding: 10px;
-  margin: 15px;
+  margin: 20px auto;
 }
 
 .bookmark-title, .bookmark-read-button, .bookmark-delete-button {
