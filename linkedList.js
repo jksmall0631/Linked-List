@@ -23,6 +23,9 @@ $('.bookmark-read-button').on('click', function(){
 });
 }
 
+
+
+
 // function readButton(){
 //   this.button = $('.bookmark-read-button');
 //   this.button.toggleClass('.read');
