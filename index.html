@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="reset.css" media="screen" title="no title">
     <link rel="stylesheet" href="styles.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script>
     <title>Linked List</title>
   </head>
   <body>
@@ -19,7 +21,12 @@
     </section>
 
     <section class="bookmarks">
-      
+      <div class="bookmark-card">
+        <h1 class="bookmark-title"></h1>
+        <a href="#"><h2 class="bookmark-url"></h2></a>
+        <input id="bookmark-read-button" type="button" name="Read" value="Read">
+        <input id="bookmark-delete-button" type="button" name="Delete" value="Delete">
+      </div>
     </section>
     <script src="linkedList.js" charset="utf-8"></script>
   </body>
