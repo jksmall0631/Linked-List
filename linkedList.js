@@ -18,4 +18,13 @@ $('.bookmarks').append('<div class="bookmark-card">' +
   '<input id="bookmark-delete-button" type="button" name="Delete" value="Delete">' +
   '</div>'
 );
-} 
+}
+
+function readButton(){
+  this.button = $('#bookmark-read-button');
+  this.button.toggleClass('.read');
+}
+
+function deleteButton(){
+  this.button = $('#bookmark-delete-button');
+}
