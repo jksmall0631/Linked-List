@@ -1,14 +1,91 @@
-body {
+html, body {
   font-family: 'Open Sans', sans-serif;
+}
+
+span h1 {
+  display: inline-block;
+}
+
+.company-name {
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .main-section {
   background-color: #455A64;
   left: 0;
+  color: #ffffff;
+  width: 50%;
+  height: 100vh;
+}
 
+.main-section{
+  display: inline-block;
+  position: fixed;
+}
+ .bookmarks{
+   position: absolute;;
+ }
+
+header {
+  margin: 30% 0;
+}
+
+header input {
+  display: block;
+  margin: 5%;
+  width: 90%;
+  height: 30px;
+  padding-left: 5px;
+}
+
+header img {
+  height: 40px;
+  width: 40px;
 }
 
 .bookmarks {
   background-color: #CFD8DC;
   right: 0;
+  width: 50%;
+  min-height: 100vh;
+}
+
+#enter-button {
+  background-color: #ffc107;
+  color: #ffffff;
+  width: 92%;
+  font-weight: 800;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.bookmark-card {
+  border: solid 2px #607d8b;
+  width: 90%;
+  background-color: #ffffff;
+  height: 100px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.bookmark-title, .bookmark-read-button, .bookmark-delete-button {
+  color: #455a64;
+}
+
+.bookmark-title, .bookmark-read-button, .bookmark-delete-button, .bookmark-url {
+  padding: 10px;
+}
+
+.bookmark-title, .bookmark-url {
+  border-bottom: 2px solid #cfd8dc;
+}
+
+.bookmark-url {
+  color: #607d8b;
+}
+
+.bookmark-title {
+  font-size: 20px;
 }

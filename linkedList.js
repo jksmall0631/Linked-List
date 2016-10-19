@@ -12,19 +12,19 @@ function displayBookmarkInfo(){
 
 function createCard(){
 $('.bookmarks').append('<div class="bookmark-card">' +
-                        '<h1 class="bookmark-title"></h1>' +
-                        '<a href="#"><h2 class="bookmark-url"></h2></a>' +
-                        '<input id="bookmark-read-button" type="button" name="Read" value="Read">' +
-                        '<input id="bookmark-delete-button" type="button" name="Delete" value="Delete">' +
-                        '</div>'
+  '<h1 class="bookmark-title"></h1>' +
+  '<a href="#"><h2 class="bookmark-url"></h2></a>' +
+  '<input id="bookmark-read-button" type="button" name="Read" value="Read">' +
+  '<input id="bookmark-delete-button" type="button" name="Delete" value="Delete">' +
+  '</div>'
 );
 }
 
 function readButton(){
-  
-  $('#bookmark-read-button').toggleClass('.read');
+  this.button = $('#bookmark-read-button');
+  this.button.toggleClass('.read');
 }
 
 function deleteButton(){
-
+  this.button = $('#bookmark-delete-button');
 }

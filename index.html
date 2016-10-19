@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="reset.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="normalize.css" media="screen" title="no title">     -->
     <link rel="stylesheet" href="styles.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -9,19 +10,34 @@
     <title>Linked List</title>
   </head>
   <body>
-    <section class="main-section">
-      <header>
-        <h1>Linked</h1>
-        <img src="linked-list-logo.svg" alt="" />
-        <h1>List</h1>
-        <input id="website-title" type="text" name="Website Title" placeholder="Website Title">
-        <input id="website-url" type="text" name="Website URL" placeholder="Website URL">
-        <input id="enter-button" type="button" name="Enter" value="Enter">
-      </header>
-    </section>
+    <div class="wrap">
+      <section class="main-section">
+        <header>
+          <span class="company-name">
+            <h1>Linked</h1>
+            <img src="linked-list-logo.svg" alt="" />
+            <h1>List</h1>
+          </span>
+          <input id="website-title" type="text" name="Website Title" placeholder="Website Title">
+          <input id="website-url" type="text" name="Website URL" placeholder="Website URL">
+          <input id="enter-button" type="button" name="Enter" value="Enter">
+        </header>
+      </section>
 
-    <section class="bookmarks">
-    </section>
+      <section class="bookmarks">
+      </section>
+    </div>
+
+
     <script src="linkedList.js" charset="utf-8"></script>
   </body>
 </html>
+
+
+
+<!-- <div class="bookmark-card">
+<h1 class="bookmark-title">The Website Title</h1>
+<a href="#"><h2 class="bookmark-url">wwww.website.com</h2></a>
+<input id="bookmark-read-button" type="button" name="Read" value="Read">
+<input id="bookmark-delete-button" type="button" name="Delete" value="Delete">
+</div> -->
