@@ -1,6 +1,8 @@
 $('#enter-button').on('click', function(){
-  // displayBookmarkInfo();
-  $(displayBookmarkInfo()).appendTo().html();
+
+  displayBookmarkInfo();
+  $('.bookmarks').append('<div>bla</div>');
+
 });
 
 function displayBookmarkInfo(){
@@ -11,5 +13,3 @@ function displayBookmarkInfo(){
 }
 
 //read on click
-
-//delete on click
