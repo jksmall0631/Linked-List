@@ -33,12 +33,15 @@ $('#website-url').on('input', function(){
   }
 });
 
+$('#website-title').on('input', function(){
+  if(($('#website-title').val() !== "") && ($('#website-url').val() !== "")){
+    document.getElementById('enter-button').disabled = false;
+  }
+  else{
+    document.getElementById('enter-button').disabled = true;
+  }
+});
+
 $('#clearReadBookmarks').on('click', function(){
   $('.red').parent().remove();
 });
-
-
-
-// $('#website-title, #website-url').on('input', function(){
-//   $('#enter-button').disabled = false;
-// });
