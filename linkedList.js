@@ -10,7 +10,7 @@ var websiteUrlField = $('#website-url').val();
 
 $('.bookmarks').append('<div class="bookmark-card">' +
   '<h1 class="bookmark-title">' + websiteTitleValue + '</h1>' +
-  '<a href="#"><h2 class="bookmark-url">' + websiteUrlField + '</h2></a>' +
+  '<a href="http://' + websiteUrlField + '" target="_blank"><h2 class="bookmark-url">' + websiteUrlField + '</h2></a>' +
   '<button class="bookmark-read-button" type="button" name="Read">Read</button>' +
   '<button class="bookmark-delete-button" type="button" name="Delete">Delete</button>' +
   '</div>'
