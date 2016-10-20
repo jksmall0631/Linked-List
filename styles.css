@@ -50,6 +50,7 @@ header input {
   right: 0;
   width: 50%;
   min-height: 100vh;
+  padding-top: 20px;
 }
 
 
@@ -118,7 +119,8 @@ header input {
   background-color: #ffffff;
   height: 100%;
   padding: 10px;
-  margin: 20px auto;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .bookmark-title, .bookmark-read-button, .bookmark-delete-button {
@@ -152,7 +154,6 @@ header input {
 
 .bookmark-url {
   color: #607d8b;
-  margin: 10px;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
 }
@@ -195,6 +196,9 @@ header input {
   header input{
     margin-top: 20px;
   }
+  .bookmark-card{
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 500px){
@@ -225,6 +229,6 @@ header input {
   }
   .bookmark-card{
     margin: auto;
-    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
