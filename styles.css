@@ -4,12 +4,16 @@ html, body {
 
 span h1 {
   display: inline-block;
+  padding-top: 15px;
+  margin: 0 10px;
 }
 
 .company-name {
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 800;
+  display: flex;
+  justify-content: center;
 }
 
 .main-section {
@@ -36,13 +40,14 @@ header input {
   display: block;
   margin: 5%;
   width: 90%;
-  height: 30px;
+  height: 40px;
   padding-left: 5px;
+  font-size: 24px;
 }
 
 header img {
-  height: 40px;
-  width: 40px;
+  height: 100px;
+  width: 100px;
 }
 
 .bookmarks {
@@ -58,9 +63,19 @@ header img {
   width: 92%;
   font-weight: 800;
   border: none;
-  margin-bottom: 20px;
+  display: block;
+  margin: 5%;
+  height: 40px;
+  font-size: 18px;
 }
 
+#enter-button:hover {
+  background-color: #ffd773;
+}
+
+#enter-button:disabled {
+  background-color: #cfd8dc;
+}
 
 .bookmark-card {
   border: solid 2px #607d8b;
