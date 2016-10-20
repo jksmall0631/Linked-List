@@ -21,6 +21,7 @@ $('.bookmarks').append('<div class="bookmark-card">' +
 $('.bookmark-delete-button').on('click', function(){
   $(this).parent().remove();
   countBookmarkCards();
+  countUnreadCards();
 });
 
 $('.bookmark-read-button').off('click').on('click', function(){
@@ -37,9 +38,11 @@ function countBookmarkCards() {
 }
 
 function countReadCards() {
-  return $('.red').length;
+  var readCount = $('.red').length;
+  $('.bookmark-read-count').html('<p>' + readCount + '</p>');
 }
 
 function countUnreadCards() {
-  console.log($('.bookmark-card').length - $('.red').length);
+  var unreadCount = $('.bookmark-card').length - $('.red').length;
+  $('.bookmark-unread-count').html('<p>' + unreadCount + '</p>');
 }
