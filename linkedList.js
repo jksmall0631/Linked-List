@@ -48,8 +48,11 @@ $('#website-title').on('input', function(){
   }
 });
 
-$('#clearReadBookmarks').on('click', function(){
+$('#clear-read-bookmarks').on('click', function(){
   $('.red').parent().remove();
+  countBookmarkCards();
+  countUnreadCards();
+  countReadCards();
 });
 
 function countBookmarkCards() {

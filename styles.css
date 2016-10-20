@@ -76,6 +76,29 @@ header img {
   background-color: #cfd8dc;
 }
 
+#enter-button:enabled, #clear-read-bookmarks:enabled {
+  outline: none;
+}
+
+#clear-read-bookmarks {
+  color: #ffffff;
+  border: none;
+  display: block;
+  font-size: 12px;
+  outline: none;
+  background-color: inherit;
+  margin-left: 4%;
+}
+
+#clear-read-bookmarks:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
 .bookmark-card {
   border: solid 2px #607d8b;
   width: 90%;
