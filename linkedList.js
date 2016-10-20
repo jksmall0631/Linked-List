@@ -30,7 +30,6 @@ $('.bookmark-read-button').off('click').on('click', function(){
 });
 }
 
-
 $('#website-url').on('input', function(){
   if(($('#website-title').val() !== "") && ($('#website-url').val() !== "")){
     document.getElementById('enter-button').disabled = false;
