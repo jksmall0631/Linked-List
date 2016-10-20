@@ -4,8 +4,6 @@ $('#enter-button').on('click', function(){
   countUnreadCards();
 });
 
-
-
 function createCard(){
 var websiteTitleValue = $('#website-title').val();
 var websiteUrlField = $('#website-url').val();
@@ -31,6 +29,28 @@ $('.bookmark-read-button').off('click').on('click', function(){
   countUnreadCards();
 });
 }
+
+$('#website-url').on('input', function(){
+  if(($('#website-title').val() !== "") && ($('#website-url').val() !== "")){
+    document.getElementById('enter-button').disabled = false;
+  }
+  else{
+    document.getElementById('enter-button').disabled = true;
+  }
+});
+
+$('#website-title').on('input', function(){
+  if(($('#website-title').val() !== "") && ($('#website-url').val() !== "")){
+    document.getElementById('enter-button').disabled = false;
+  }
+  else{
+    document.getElementById('enter-button').disabled = true;
+  }
+});
+
+$('#clearReadBookmarks').on('click', function(){
+  $('.red').parent().remove();
+});
 
 function countBookmarkCards() {
   var bookmarkCount = $('.bookmark-card').length;
