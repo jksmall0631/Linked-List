@@ -93,6 +93,7 @@ header img {
 #clear-read-bookmarks {
   color: #ffffff;
   border: none;
+  text-decoration: underline;
   display: block;
   outline: none;
   background-color: inherit;
