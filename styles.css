@@ -75,6 +75,7 @@ header input {
   min-height: 100vh;
 }
 
+
 #enter-button {
   background-color: #ffc107;
   color: #ffffff;
@@ -95,6 +96,40 @@ header input {
 
 #enter-button:disabled {
   background-color: #cfd8dc;
+}
+
+#enter-button:enabled, #clear-read-bookmarks:enabled {
+  outline: none;
+}
+
+.counters-and-clear {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 9%;
+  font-size: 12px;
+  width: 80%;
+}
+
+#clear-read-bookmarks {
+  color: #ffffff;
+  border: none;
+  display: block;
+  outline: none;
+  background-color: inherit;
+  vertical-align: center;
+  font-size: 12px;
+}
+
+#clear-read-bookmarks:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.counters-and-clear > p {
+  vertical-align: middle;
+  padding-top: 4px;
 }
 
 .bookmark-card {
