@@ -56,6 +56,7 @@ header img {
   min-height: 100vh;
 }
 
+
 #enter-button {
   background-color: #ffc107;
   color: #ffffff;
@@ -80,14 +81,23 @@ header img {
   outline: none;
 }
 
+.counters-and-clear {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 9%;
+  font-size: 12px;
+  width: 80%;
+}
+
 #clear-read-bookmarks {
   color: #ffffff;
   border: none;
   display: block;
-  font-size: 12px;
   outline: none;
   background-color: inherit;
-  margin-left: 4%;
+  vertical-align: center;
+  font-size: 12px;
 }
 
 #clear-read-bookmarks:hover {
@@ -96,8 +106,10 @@ header img {
   cursor: pointer;
 }
 
-
-
+.counters-and-clear > p {
+  vertical-align: middle;
+  padding-top: 4px;
+}
 
 .bookmark-card {
   border: solid 2px #607d8b;
