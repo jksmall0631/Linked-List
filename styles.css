@@ -23,9 +23,6 @@ span img{
   color: #ffffff;
   width: 50%;
   height: 100vh;
-}
-
-.main-section{
   display: inline-block;
   position: fixed;
 }
@@ -44,16 +41,6 @@ header input {
   font-size: 24px;
 }
 
-.bookmarks {
-  position: absolute;
-  background-color: #CFD8DC;
-  right: 0;
-  width: 50%;
-  min-height: 100vh;
-  padding-top: 20px;
-}
-
-
 #enter-button {
   background-color: #ffc107;
   color: #ffffff;
@@ -65,7 +52,6 @@ header input {
   margin-top: 40px;
   height: 40px;
   font-size: 18px;
-
 }
 
 #enter-button:hover {
@@ -94,29 +80,20 @@ header input {
   padding-right: 15px;
 }
 
-#clear-read-bookmarks {
-  text-decoration: underline;
-  color: #ffffff;
-  border: none;
-  display: block;
-  outline: none;
-  background-color: inherit;
-  font-size: 12px;
-  margin: auto;
-  padding-top: 10px;
-}
-
-#clear-read-bookmarks:hover {
-  color: #CFD8DC;
-  text-decoration: underline;
-  cursor: pointer;
+.bookmarks {
+  position: absolute;
+  background-color: #CFD8DC;
+  right: 0;
+  width: 50%;
+  min-height: 100vh;
+  padding-top: 20px;
 }
 
 .bookmark-card {
   border: solid 2px #607d8b;
   width: 90%;
   background-color: #ffffff;
-  height: 100%;
+  height: 120px;
   padding: 10px;
   margin: auto;
   margin-bottom: 20px;
@@ -134,12 +111,54 @@ header input {
   border-bottom: 2px solid #cfd8dc;
 }
 
+.bookmark-url {
+  color: #607d8b;
+  padding: 18px 0 18px 2px;
+}
+
+.bookmark-url:hover {
+  text-decoration: underline;
+}
+
+.bookmark-title {
+  padding-left: 2px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bookmark-card > a {
+  text-decoration: none;
+}
+
+#clear-read-bookmarks {
+  text-decoration: underline;
+  color: #ffffff;
+  border: none;
+  text-decoration: underline;
+  display: block;
+  outline: none;
+  background-color: inherit;
+  font-size: 12px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+#clear-read-bookmarks:hover {
+  color: #CFD8DC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .bookmark-read-button, .bookmark-delete-button {
   text-decoration: none;
   border: none;
   background: none;
   position: relative;
   font-size: 14px;
+}
+
+.bookmark-delete-button {
+  float: right;
 }
 
 .bookmark-delete-button:focus, .bookmark-read-button:focus {
@@ -156,9 +175,13 @@ header input {
   text-decoration-color: #f2f4f4;
 }
 
-.bookmark-title {
-  font-size: 22px;
-  font-weight: 600;
+.bookmark-delete-button:hover, .bookmark-read-button:hover{
+  text-decoration: none;
+  border-bottom: 2px solid #ffc107;
+}
+
+.bookmark-read-button:hover, .bookmark-url:hover, .bookmark-delete-button:hover  {
+  font-weight: 800;
 }
 
 .red{
@@ -166,14 +189,6 @@ header input {
   font-weight: 800;
 }
 
-.background-color {
-  background-color: #f2f4f4;
-}
-
-.bookmark-url:hover, .bookmark-delete-button:hover, .bookmark-read-button:hover {
-  text-decoration: underline;
-  /*border-bottom: #ffc107;*/
-}
 @media screen and (max-width: 1000px){
   .company-name{
     width: 90%;
