@@ -166,12 +166,21 @@ header input {
   outline: 0;
 }
 
-.bookmark-delete-button:hover, .bookmark-read-button:hover {
+.bookmark-delete-button {
+  float: right;
+}
+
+.bookmark-url {
+  color: #607d8b;
+  text-decoration-color: #f2f4f4;
+}
+
+.bookmark-delete-button:hover, .bookmark-read-button:hover{
   text-decoration: none;
   border-bottom: 2px solid #ffc107;
 }
 
-.bookmark-read-button:hover, .bookmark-url:hover {
+.bookmark-read-button:hover, .bookmark-url:hover, .bookmark-delete-button:hover  {
   font-weight: 800;
 }
 
